@@ -26,6 +26,8 @@ body, html {
   flex-direction: column;
   padding: 2rem;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .couple-photo {
@@ -61,6 +63,14 @@ body, html {
   color: #555;
 }
 
-.scroll-icon {
+.scroll-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 2rem;
 }
+
+.scroll-animation lottie-player {
+  width: 60px;
+  height: 60px;
+  filter: brightness(0);
