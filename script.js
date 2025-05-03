@@ -66,17 +66,6 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// home.js
-window.addEventListener('scroll', function () {
-  const foto = document.getElementById('fotoPasangan');
-  const posisi = foto.getBoundingClientRect().top;
-  const tinggiLayar = window.innerHeight;
-
-  if (posisi < tinggiLayar - 100) {
-    foto.classList.add('show');
-  }
-});
-
 // Animasi foto pasangan saat scroll
 function revealPhotoOnScroll() {
   const photo = document.querySelector('.couple-photo');
