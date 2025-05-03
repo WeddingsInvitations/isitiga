@@ -253,6 +253,16 @@ body {
   margin-bottom: 20px;
 }
 
+/* Scroll animation styles */
 .scroll-animation {
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.scroll-animation lottie-player {
+  width: 60px;
+  height: 60px;
+  filter: brightness(0); /* warna hitam */
 }
