@@ -69,12 +69,15 @@ window.addEventListener('DOMContentLoaded', () => {
 // Animasi foto pasangan saat scroll
 function revealPhotoOnScroll() {
   const photo = document.querySelector('.couple-photo');
-  const rect = photo.getBoundingClientRect();
+  if (!photo) return;
 
-  if (rect.top < window.innerHeight - 100) {
+  const rect = photo.getBoundingClientRect();
+  const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+  if (isVisible) {
     photo.classList.add('visible');
+    window.removeEventListener('scroll', revealPhotoOnScroll); // hanya sekali
   }
 }
 
 window.addEventListener('scroll', revealPhotoOnScroll);
-window.addEventListener('load', revealPhotoOnScroll);
