@@ -77,3 +77,4 @@ function revealPhotoOnScroll() {
 }
 
 window.addEventListener('scroll', revealPhotoOnScroll);
+window.addEventListener('load', revealPhotoOnScroll);
