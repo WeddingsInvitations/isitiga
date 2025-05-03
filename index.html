@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
   <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
 
@@ -41,13 +42,13 @@
   <audio id="bg-music" src="audio.mp3" loop></audio>
 
   <!-- Isi Undangan -->
-<section id="home" class="section" style="display: none;">
-  <div class="home-container">
-    <div class="photo-wrapper">
-      <img src="IMG_7437.jpg" alt="Pasangan" class="couple-photo" />
-    </div>
-    <h2 class="wedding-text">The Wedding Of</h2>
-    <img src="tengah.png" alt="Logo Home" class="home-logo" />
+  <section id="home">
+    <img src="home/IMG_7437.JPG" alt="Foto Pasangan" class="couple-photo" id="fotoPasangan" />
+
+    <p class="wedding-text">The Wedding Of</p>
+
+    <img src="home/couple home.png" alt="Couple Icon" class="couple-icon" />
+
     <p class="wedding-date">Rabu, 03 Juni 2026</p>
 
     <div class="scroll-animation">
@@ -59,8 +60,7 @@
         autoplay>
       </lottie-player>
     </div>
-  </div>
-</section>
+  </section>
 
   <div id="mempelai" class="section">Mempelai Section</div>
   <div id="acara" class="section">Acara Section</div>
@@ -76,6 +76,7 @@
     <a href="#thanks" class="nav-item"><i class="fi fi-sr-hand-holding-heart"></i><span>Thanks</span></a>
   </nav>
 
+  <script src="https://unpkg.com/lottie-web@5.12.0/build/player/lottie.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
