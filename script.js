@@ -76,3 +76,15 @@ window.addEventListener('scroll', function () {
     foto.classList.add('show');
   }
 });
+
+// Animasi foto pasangan saat scroll
+function revealPhotoOnScroll() {
+  const photo = document.querySelector('.couple-photo');
+  const rect = photo.getBoundingClientRect();
+
+  if (rect.top < window.innerHeight - 100) {
+    photo.classList.add('visible');
+  }
+}
+
+window.addEventListener('scroll', revealPhotoOnScroll);
