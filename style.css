@@ -184,3 +184,75 @@ html, body {
 .nav-item.active {
   color: #e75480;
 }
+
+body {
+  background: url('bgbody.png') fixed center center/cover;
+  background-attachment: fixed;
+}
+
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+
+.home-content {
+  animation: fadeInDown 1s ease forwards;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.couple-photo {
+  width: 180px;
+  height: 220px;
+  border-radius: 50% / 45%;
+  border: 5px solid #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  margin-bottom: 15px;
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: all 1s ease;
+}
+
+.couple-photo.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.wedding-of {
+  font-family: 'TheBest', cursive;
+  font-size: 2.1rem;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.logo-home {
+  width: 90px;
+  height: auto;
+  margin: 15px 0;
+}
+
+.wedding-date {
+  font-family: 'Domine', serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.scroll-animation {
+  margin-top: 30px;
+}
