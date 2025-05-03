@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Domine', serif;
-  background: url('bgbody.png') no-repeat center center fixed;
+  background: url('home/bgbody.png') no-repeat center center fixed;
   background-size: cover;
   overflow-x: hidden;
 }
