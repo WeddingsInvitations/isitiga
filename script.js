@@ -65,3 +65,14 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('navbar').classList.remove('show');
   }
 });
+
+// home.js
+window.addEventListener('scroll', function () {
+  const foto = document.getElementById('fotoPasangan');
+  const posisi = foto.getBoundingClientRect().top;
+  const tinggiLayar = window.innerHeight;
+
+  if (posisi < tinggiLayar - 100) {
+    foto.classList.add('show');
+  }
+});
