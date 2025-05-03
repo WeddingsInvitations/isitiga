@@ -186,7 +186,7 @@ html, body {
 }
 
 body {
-  background: url('bgbody.png') fixed center center/cover;
+  background: url('home/bgbody.png') fixed center center/cover;
   background-attachment: fixed;
 }
 
