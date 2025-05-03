@@ -42,15 +42,13 @@
   <audio id="bg-music" src="audio.mp3" loop></audio>
 
   <!-- Isi Undangan -->
-  <section id="home">
-    <img src="home/IMG_7437.JPG" alt="Foto Pasangan" class="couple-photo" id="fotoPasangan" />
-
-    <p class="wedding-text">The Wedding Of</p>
-
-    <img src="home/couple home.png" alt="Couple Icon" class="couple-icon" />
-
-    <p class="wedding-date">Rabu, 03 Juni 2026</p>
-
+<!-- Isi Undangan -->
+<div id="home" class="section home-section">
+  <div class="home-content">
+    <img src="IMG_7437.jpg" alt="Pasangan" class="couple-photo" />
+    <div class="wedding-of">The Wedding Of</div>
+    <img src="tengah.png" alt="Logo Tengah" class="logo-home" />
+    <div class="wedding-date">Rabu, 03 Juni 2026</div>
     <div class="scroll-animation">
       <lottie-player
         src="home/scroll-down.json"
@@ -60,7 +58,12 @@
         autoplay>
       </lottie-player>
     </div>
-  </section>
+  </div>
+</div>
+
+<!-- Tambahkan Lottie -->
+<script src="https://unpkg.com/lottie-web@5.12.0/build/player/lottie.min.js"></script>
+
 
   <div id="mempelai" class="section">Mempelai Section</div>
   <div id="acara" class="section">Acara Section</div>
