@@ -41,7 +41,27 @@
   <audio id="bg-music" src="audio.mp3" loop></audio>
 
   <!-- Isi Undangan -->
-  <div id="home" class="section">Home Section</div>
+  <!-- HOME SECTION -->
+  <section id="home" class="section">
+    <div class="home-container">
+      <div class="spacer"></div>
+      <img src="home/IMG_7437.JPG" alt="Pasangan" class="couple-photo" />
+      <div class="wedding-title">The Wedding Of</div>
+      <img src="home/tengah.png" alt="Logo Tengah" class="home-logo" />
+      <p class="wedding-date">Rabu, 03 Juni 2026</p>
+
+      <div class="scroll-animation">
+        <lottie-player
+          src="home/scroll-down.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay>
+        </lottie-player>
+      </div>
+    </div>
+  </section>
+
   <div id="mempelai" class="section">Mempelai Section</div>
   <div id="acara" class="section">Acara Section</div>
   <div id="rsvp" class="section">RSVP Section</div>
@@ -57,5 +77,6 @@
   </nav>
 
   <script src="script.js"></script>
+  <script src="https://unpkg.com/lottie-web@5.12.0/build/player/lottie.min.js"></script>
 </body>
 </html>
